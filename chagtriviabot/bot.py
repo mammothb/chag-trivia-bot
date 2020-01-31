@@ -24,7 +24,7 @@ class ChagTriviaBot:
     def __init__(self):
         LOG.info("Bot starting...")
         self.name = "Chag Trivia Bot"
-        self.version = "0.2.1"
+        self.version = "0.2.2"
         self.is_loaded = False
         self.is_running = False
         self.chat = Chat(self)

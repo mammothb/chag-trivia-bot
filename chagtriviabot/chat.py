@@ -65,7 +65,7 @@ class Chat:
             message = self.CHAT_MSG.sub("", response)
             LOG.info("USER RESPONSE: %s : %s", username, message)
             self.bot.process_message(username, message)
-        except (BlockingIOError, AttributeError):
+        except (BlockingIOError, AttributeError, UnicodeDecodeError):
             pass
         finally:
             time.sleep(1 / self.RATE)
