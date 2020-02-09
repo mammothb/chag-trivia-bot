@@ -153,7 +153,6 @@ class ChagTriviaBot:
                 LOG.info("Command recognized.")
                 self.execute_command(split_message, username)
                 time.sleep(1)
-            print(split_message)
         else:
             if self.is_active and self.session.check_answer(clean_message):
                 LOG.info("Answer recognized.")
